@@ -1,1 +1,22 @@
 // Mixins Here
+
+.border{
+    border: 2px solid black;
+    margin-top: 1%;
+    border-radius: 20px;
+}
+
+.hover {
+    &:hover {
+        transform: scale(1.5);
+         }
+}
+
+.btnsettings (@padding; @font-size; @margin; @background-color; @borderradius; @fontcolor) {
+    padding: @padding; 
+    font-size: @font-size; 
+    margin:@margin;
+    background-color:@background-color;
+    border-radius: @borderradius;
+    color: @fontcolor;  
+}
